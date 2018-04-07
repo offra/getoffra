@@ -1,0 +1,38 @@
+.progress-bar{
+    .progress{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        display: block;
+        width: 0%;
+        border: 0;
+        background-color: #5BBC2E !important;
+        margin-bottom: 20px;
+        min-height:15px;
+        overflow: hidden;
+        &.stripped{
+            background: 
+              /* On "top" */
+              repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                #5BBC2E 10px,
+                #36A002 20px
+              ),
+              /* on "bottom" */
+              linear-gradient(
+                to bottom,
+                #5BBC2E,
+                #36A002
+              );
+        }
+        &.animated-stripped{
+            
+        }
+    }
+    .parcent {
+        position: absolute;
+        left: 0;
+        transform: translateX(-100%);
+    }
+}

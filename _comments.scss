@@ -1,0 +1,55 @@
+.offra-commnet-list {
+	list-style: none;
+    padding-left: 0;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.comment-meta {
+	display: flex;
+	flex-flow: row;
+	align-items: flex-start;
+}
+.comment-author {
+	margin-right: 30px;
+}
+.comment-metadata {
+	flex-basis: 1px;
+	flex: 1;
+	position: relative;
+}
+.comment-title {
+	font-weight: 500;
+	font-size: 18px;
+}
+.comment-info {
+	font-size: 14px;
+	color: #777;
+}
+.comment-link {
+	float: right;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.comment-body {
+	margin-top: 15px;
+}
+.comment-child {
+	list-style: none;
+	padding-left: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.offra-commnet-list  .comment-child .comment-child .comment-child{
+    padding-left: 0;
+}
+.offra-comment {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 25px;
+}
+.comment-body p {
+	color: #777;
+}
+.offra-commnet-list > li:last-child .offra-comment{
+//    border-bottom: 0px;
+}

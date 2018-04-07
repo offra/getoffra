@@ -1,0 +1,54 @@
+$bold:700;
+$sutitle_color:#999;
+$font-color:#444;
+$heading-color:#333;
+$semibold:600;
+$medium:500;
+$regular:400;
+$fz1:1em;
+$color5:#9AD3DE;
+$color5Hover:#84c3d0;
+$defaultColor:#f2f2f2;
+$shadow3dp:0px 1px 3px rgba(0,0,0,.30);
+$shadow3dp-deep:0px 1px 3px rgba(0,0,0,.70);
+$shadow10dp:0px 5px 10px rgba(51,51,51,.20);
+$primary-color:#5BBC2E;
+$success-color:#88c35e;
+$warning-color:#FEEA3B;
+$danger-color:#F56F6C;
+$white-color:#fff;
+$info-color:#9AD3DE;
+$light-blue:#0482F8;
+$dark-blue:#065eb1;
+$color6:#3300BF;
+$orange:#FF931E;
+$purPle:#662D91;
+$colorb3:#b3b3b3;
+$active-color: #36A002;
+$normal-color:#b3b3b3;
+$secondary-color:#d5d5d5;
+$primary-hover-color:#36A002;
+$warning-hover-color:#e6d32a;
+$danger-hover-color:#dc5a57;
+$purple-hover-color:#421863;
+$success-hover-color:#78ad52;
+$info-hover-color:#7dc1ce;
+$orange-hover-color:#d67d1c;
+$pure-black:#000;
+$link-bg:#3273DC;
+$link-bg-hover:#2461c3;
+$disabled-color:#ececec;
+$secondary-hover-color:#cccbcb;
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin transition($transitionTime) {
+   -webkit-transition: $transitionTime;
+  -moz-transition: $transitionTime;
+  -o-transition: $transitionTime;
+  transition: $transitionTime;
+}
+

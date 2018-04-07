@@ -1,0 +1,145 @@
+.timeline {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-flow: column;
+    position: relative;
+}
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #ddd;
+}
+.timeline-item {
+    width: calc(50% - 30px);
+    position: relative;
+}
+.timeline .timeline-item:nth-child(2n+1) {
+    align-self: flex-end;
+}
+.timeline .timeline-item:nth-child(2n) {
+    align-self: flex-start;
+    text-align: right;
+}
+.timeline-item:nth-child(2n+1) .timeline-element{
+    right: calc(100% + 18px);;
+    left: inherit;
+}
+.timeline-item:nth-child(2n) .timeline-element{
+    left: calc(100% + 18px);
+    right: inherit;
+}
+.timeline-item {
+    width: calc(50% - 30px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.timeline .timeline-item:nth-child(even) {
+    align-self: flex-start;
+    text-align: right;
+}
+.timeline-element {
+    height: 20px;
+    width: 20px;
+    border: 1px solid #ddd;
+    position: absolute;
+    left: 0;
+    border-radius: 50%;
+}
+.timeline-item.timeline-right .timeline-content {
+    text-align: left;
+}
+.timeline-item.timeline-left .timeline-content {
+    text-align: right;
+}
+.timeline-item:nth-child(2n+1) .timeline-time,
+.timeline-item.timeline-right .timeline-time {
+    position: absolute;
+    left: inherit;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: inherit;
+    text-align: left;
+}
+.timeline-item:nth-child(2n) .timeline-time{
+    position: absolute;
+    right: inherit;
+    left: calc(100% + 18px);
+    transform: translateY(-50%);
+    top: 50%;
+    width: inherit;
+    text-align: right;
+}
+.timeline-item:nth-child(even) .timeline-time,
+.timeline-item.timeline-left .timeline-element {
+    right: inherit;
+    left: calc(100% + 18px);
+}
+.timeline-item.timeline-right .timeline-time {
+    position: absolute;
+    left: inherit;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: inherit;
+    text-align: left;
+}
+.timeline-item.timeline-left .timeline-time {
+    position: absolute;
+    right: inherit;
+    left: 100%;
+    transform: translateY(-50%);
+    top: 50%;
+    width: inherit;
+    text-align: right;
+}
+.timeline-item.timeline-right .timeline-element {
+    left: inherit;
+    right: calc(100% + 17px);
+    position: absolute;
+}
+.timeline-element {
+    height: 25px;
+    width: 25px;
+    border: 1px solid #ddd;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    background: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .40s linear;
+}
+.timeline-item.timeline-active .timeline-element {
+    border-color: #5BBC2E;
+}
+.timeline-chat .timeline-item.timeline-right .media {
+    flex-flow: row-reverse;
+}
+.timeline-chat .timeline-item.timeline-left .media .media-image {
+    margin-right: 20px;
+    margin-left: 0px;
+}
+.timeline-chat .timeline-item.timeline-left .media .media-content {
+    text-align: left;
+}
+.timeline-chat .timeline-item.timeline-right .media .media-content {
+    text-align: right;
+}
+.timeline-chat .timeline-item.timeline-right .media .media-image {
+    margin-right: 0;
+    margin-left: 20px;
+}

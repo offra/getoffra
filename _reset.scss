@@ -1,0 +1,240 @@
+@import 'variable';
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,body {
+  font-size: $fz1;
+    color: $font-color;
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    line-height: 1.6;
+    font-weight: $regular;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+    transition: all .40s linear;
+    position: relative;
+}
+[role=button], a, area, button, input:not([type=range]), label, select, summary, textarea {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+html,
+body,
+p,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,{
+  margin: 0;
+  padding: 0;
+}
+ul,ol{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+@-ms-viewport {
+  width: device-width;
+}
+a,a:hover,a:focus{
+    text-decoration: none;
+    cursor: pointer;
+}
+a{
+    color: #37A000;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $medium;
+    margin-bottom: .12em;
+    margin-top: 0;
+}
+h1 {
+    font-size: 48px;
+    line-height: 70px;
+}
+h2 {
+    font-size: 36px;
+    line-height: 56px;
+}
+h3 {
+    font-size: 28px;
+    line-height: 48px;
+}
+h4 {
+    font-size: 21px;
+    line-height: 38px;
+}
+h5 {
+    font-size: 18px;
+    line-height: 34px;
+}
+h6 {
+    font-size: 16px;
+    line-height: 24px;
+}
+strong,
+b {
+  font-weight: $bold;
+  line-height: inherit; 
+}
+small {
+    font-size: .77em;
+}
+
+em{
+    font-style: italic;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+textarea{
+    min-height: 100px;
+}
+.field-control:focus{
+    outline: none;
+}
+button,
+.btn{
+    outline: none;
+    cursor: pointer;
+}
+img,
+embed,
+object,
+audio,
+video {
+  max-width: 100%;
+}
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+table{
+    border-collapse: collapse;
+}
+
+iframe {
+  border: 0;
+    width: 100%;
+    height: auto;
+}
+code,
+kbd,
+samp {
+    font-family: inherit;
+    font-size: inherit;
+}
+img {
+  height: auto;
+  max-width: 100%;
+    vertical-align: middle;
+}
+pre {
+  overflow: auto; }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; }
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  vertical-align: top;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-color: #dbdbdb;
+  color: #363636;
+  cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+}
+
+blockquote {
+  margin: 0 0 1rem;
+  padding: 1.20rem 1.50rem 1.20rem 1.50rem;
+  border-left: 5px solid #cacaca; 
+    background: #eee;
+}
+  blockquote, blockquote p {
+    line-height: 1.6;
+    color: #8a8a8a; }
+
+cite {
+  display: block;
+  font-size: 0.8125rem;
+  color: #8a8a8a; }
+  cite:before {
+    content: "— "; }
+
+abbr, abbr[title] {
+  border-bottom: 1px dotted #0a0a0a;
+  cursor: help;
+  text-decoration: none; }
+
+figure {
+  margin: 0; }
+
+code {
+  padding: 0.125rem 0.3125rem 0.0625rem;
+  background-color: #e6e6e6;
+  font-weight: $regular;
+  font-family: monospace, monospace;
+  color: #E88501;
+  font-size: .95em;
+    @include border-radius(3px);
+}
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: button;
+}
+kbd {
+  margin: 0;
+  padding: 0.125rem 0.25rem 0;
+  background-color: #e6e6e6;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  color: #0a0a0a;
+}

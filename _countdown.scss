@@ -1,0 +1,32 @@
+.demo-countdown{
+    span{
+        font-size: 39px;
+        font-weight:  700;
+        padding-right:  15px;
+        span{
+            font-weight: 400;
+            text-transform:  capitalize;
+        }
+    }
+    &.countdown-dots{
+        span{
+            position:  relative;
+            &::after{
+                content: ":";
+                position:  absolute;
+                top: 50%;
+                line-height:  initial;
+                right: 0;
+                transform: translateY(-50%);
+            }
+            &:last-child{
+                &::after{
+                    display: none;
+                }
+            }
+            span{
+                display: none;
+            }
+        }
+    }
+}

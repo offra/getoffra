@@ -1,0 +1,59 @@
+@import 'variable';
+/*color css*/
+.secondary-color{
+    background: $secondary-color;
+}
+.primary-bg{
+    background: $primary-color;
+}
+.secondary-bg{
+    background: $secondary-color !important;
+}
+.warning-bg{
+    background: $warning-color !important;
+}
+.success-bg{
+    background: $success-color !important;
+}
+.info-bg{
+    background: $info-color !important;
+}
+.danger-bg{
+    background: $danger-color !important;
+}
+.orange-bg{
+    background: $orange !important;
+}
+.purple-bg{
+    background: $purPle !important;
+}
+.bg-light-secondary{
+   background: $disabled-color !important; 
+}
+.color5{
+    background: $color5 !important; 
+}
+.color5:hover{
+    background: $color5Hover !important; 
+}
+.text-success{
+    color: $success-color !important; 
+}
+.text-warning{
+    color: $warning-color !important; 
+}
+.text-info{
+    color: $info-color !important; 
+}
+.text-primary{
+    color: $primary-color !important; 
+}
+.text-danger{
+    color: $danger-color !important; 
+}
+.text-white{
+    color: $white-color !important;
+}
+.text-link{
+    color: $link-bg !important; 
+}

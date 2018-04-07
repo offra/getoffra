@@ -1,0 +1,79 @@
+        .MyCustomMenu .menu_toggle {
+        display: flex;
+        cursor: pointer;
+        min-height: 60px;
+        align-items: center;
+        justify-content: center;
+    }
+    .MyCustomMenu.navigation-area{
+        position: relative;
+    }
+    .MyCustomMenu .navigation-area {
+        position: relative;
+    }
+    .MyCustomMenu .brand-logo {
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+    }
+    .MyCustomMenu .navbar-mobile.active {
+        visibility: visible;
+        transform: rotateX(0deg) translateX(-50%);
+        opacity: 1;
+    }
+    .navbar-mobile.active ul li a {
+        color: #000 !important;
+    }
+    .MyCustomMenu .navbar-nav {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-flow: column;
+        padding-left: 10px;
+        margin-left: 0px;
+    }
+    .MyCustomMenu .navbar-nav li a {
+        line-height: 46px;
+        display: block;
+    }
+        .MyCustomMenu .navbar-mobile {
+            -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            display: block;
+            position: absolute;
+            background: #fff;
+            left: 50%;
+            width: 100%;
+            z-index: 90;
+            padding: 15px;
+            top: 100%;
+            transform: rotateX(90deg) translateX(-50%);
+            transform-origin: top;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .30s linear;
+        }
+        .MyCustomMenu .DropDown,.MyCustomMenu .subMenu,.MyCustomMenu .NsubMenu {
+            position: relative;
+            left: 0;
+            width: 100%;
+            top: 0;
+            box-shadow: none;
+        }
+        .MyCustomMenu .navbar-nav li .DpSign > a::after {
+            left: calc(100% - -5px);
+            border-top: 5px solid #333;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+        }
+        .MyCustomMenu .navbar-nav li .DpSign > a::after {
+            left: calc(100% - -5px);
+            border-top: 5px solid #333;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+        }
+    

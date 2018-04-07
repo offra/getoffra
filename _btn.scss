@@ -1,0 +1,305 @@
+/*button here*/
+
+.btn-group{
+    display: inline-flex;
+    vertical-align: middle;
+    position: relative;
+}
+.btn{
+    display: inline-block;
+    color: $white-color;
+    background: $primary-color;
+    @include transition(.30s);
+    font-weight: $regular;
+    line-height: 1;
+    font-size: 16px;
+    vertical-align: middle;
+    text-transform: capitalize;
+    padding: 6px 13px 6px 13px;
+    height: inherit;
+    border: 1px solid transparent;
+    &.btn-icon-text{
+        i{
+            padding-right: 7px;
+        }
+    }
+    &.btn-large{
+       font-weight: 500;
+        font-size: 18px;
+        padding: 10px 18px 10px 18px;
+        height: inherit;
+        line-height: 1;
+        font-weight: $medium;
+    }
+    &.btn-medium{
+        @extend .btn;
+        height: 40px;
+    }
+    &.btn-tiny{
+        line-height: 1;
+            height: inherit;
+            font-weight: $regular;
+            font-size: 12px;
+            padding: 3px 5px 3px 5px;
+    }
+    &.btn-full-width{
+        width: 100%;
+        line-height: 1;
+        height: inherit;
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 16px;
+        padding: 11px 10px 11px 10px;
+        text-align: center;
+        display: block;
+        font-weight: $medium;
+    }
+    &.btn-rare{
+        line-height: 1;
+        height: inherit;
+        font-size: 12px;
+        padding: 5.5px 10px 5.5px 10px;
+    }
+    &.btn-xlg{
+        line-height: 1;
+        text-align: center;
+        font-size: 21px;
+        font-weight: 500;
+        text-transform: capitalize;
+        padding: 13.5px 22px 13.5px 22px;
+        height: inherit;
+    }
+    &.btn.btn-msv{
+        line-height: 1;
+        padding: 14.5px 35px 14.5px 35px;
+        font-weight: 500;
+        font-size: 24px;
+    }
+    &:hover{
+        background: $primary-hover-color;
+    }
+    &.active{
+         background: $primary-hover-color;
+    }
+    &.disabled{
+        pointer-events: none;
+        background: $disabled-color;
+        border-color: $disabled-color;
+        color: $white-color; 
+    }
+}
+//.btn-default{
+//    @extend .btn;
+//    padding-left: 18px;
+//    padding-right: 18px;
+//    line-height: 40px;
+//    height: 40px;
+//    margin: 20px;
+//    font-weight: $regular;
+//    font-size: 18px;
+//}
+.btn-success{
+    background: $success-color;
+    &:hover{
+        background: $success-hover-color;
+    }
+    &.active{
+       background: $success-hover-color; 
+    }
+}
+.btn-warning{
+    background: $warning-color;
+    color: #333;
+    &:hover{
+        background: $warning-hover-color;
+    }
+    &.active{
+        background: $warning-hover-color;
+    }
+}
+.btn-info{
+    background: $info-color;
+    &:hover{
+        background: $info-hover-color;
+    }
+    &.active{
+        background: $info-hover-color;
+    }
+}
+.btn-link{
+    background: $link-bg;
+    &:hover{
+        background: $link-bg-hover
+    }
+    &.active{
+        background: $link-bg-hover
+    }
+}
+.btn-danger{
+    background: $danger-color;
+    &:hover{
+        background: $danger-hover-color;
+    }
+    &.active{
+        background: $danger-hover-color;
+    }
+}
+.btn-orange{
+    background: $orange;
+    &:hover{
+        background: $orange-hover-color;
+    }
+    &.active{
+        background: $orange-hover-color;
+    }
+}
+.btn-purple{
+    background: $purPle;
+    &:hover{
+        background: $purple-hover-color;
+    }
+    &.active{
+        background: $purple-hover-color;
+    }
+}
+.btn-secondary{
+    background: $secondary-color;
+    color: $pure-black;
+    &:hover{
+        background: $secondary-hover-color;
+        color: $pure-black;
+    }
+    &.active{
+        background: $secondary-hover-color;
+        color: $pure-black;
+    }
+}
+.btn-bordered-secondary{
+    background: transparent;
+    border: 1px solid $secondary-color;
+    color: $heading-color;
+    &:hover{
+        background: $secondary-hover-color;
+    }
+    &.active{
+        background: $secondary-hover-color;
+        color: $white-color;
+    }
+}
+.btn-bordered-default{
+    background: transparent;
+    border-color: $primary-color;
+    color: $primary-color;
+    &:hover{
+        background: $primary-hover-color;
+        color: $white-color;
+    }
+    &.active{
+        background: $primary-hover-color;
+        color: $white-color;
+    }
+}
+.btn-bordered-success{
+    background: transparent;
+    border-color: $success-color;
+    color: $success-color;
+    &:hover{
+        background: $success-hover-color;
+        color: $white-color;
+        border-color: $success-hover-color;
+    }
+    &.active{
+        background: $success-hover-color;
+        color: $white-color;
+        border-color: $success-hover-color;
+    }
+}
+.btn-bordered-warning{
+    background: transparent;
+    border-color:$warning-color;
+    color: $warning-color;
+    &:hover{
+        background: $warning-hover-color;
+        border-color: $warning-hover-color;
+        color: $pure-black;
+    }
+    &.active{
+        background: $warning-hover-color;
+        border-color: $warning-hover-color;
+        color: $pure-black;
+    }
+}
+.btn-bordered-info{
+    background: transparent;
+    border-color: $info-color;
+    color: $info-color;
+    &:hover{
+        background: $info-hover-color;
+        border-color: $info-hover-color;
+        color: $pure-black;
+    }
+    &.active{
+        background: $info-hover-color;
+        border-color: $info-hover-color;
+        color: $pure-black;
+    }
+}
+.btn-bordered-danger{
+    background: transparent;
+    border-color: $danger-color;
+    color: $danger-color;
+    &:hover{
+        background: $danger-hover-color;
+        border-color: $danger-hover-color;
+        color: $white-color;
+    }
+    &.active{
+        background: $danger-hover-color;
+        border-color: $danger-hover-color;
+        color: $white-color;
+    }
+}
+.btn-bordered-oranage{
+    background: transparent;
+    border-color:$orange;
+    color: $orange;
+    &:hover{
+        background: $orange-hover-color;
+        border-color: $orange-hover-color;
+        color: $white-color;
+    }
+    &.active{
+        background: $orange-hover-color;
+        border-color: $orange-hover-color;
+        color: $white-color;
+    }
+}
+.btn-bordered-purple{
+    background: transparent;
+    border-color: $purPle;
+    color: $purPle;
+    &:hover{
+        background: $purple-hover-color;
+        border-color: $purple-hover-color;
+        color: $white-color;
+    }
+    &.active{
+        background: $purple-hover-color;
+        border-color: $purple-hover-color;
+        color: $white-color;
+    }
+}
+.btn-bordered-link{
+    background: transparent;
+    border-color: $link-bg;
+    color: $link-bg;
+    &:hover{
+        background: $link-bg-hover;
+        border-color: $link-bg-hover;
+        color: $white-color;
+    }
+    &.active{
+        background: $link-bg-hover;
+        color: $white-color;
+    }
+}

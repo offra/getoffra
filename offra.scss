@@ -1,0 +1,265 @@
+@import 'slider';
+@import 'countdown';
+@import 'spacing';
+@import 'variable';
+@import 'sections';
+@import 'tab';
+@import 'dropdown';
+@import 'progressbar';
+@import 'overlapping';
+@import 'sections';
+@import 'scroll-spy';
+@import 'timeline';
+@import 'animations';
+@import 'sticky';
+@import 'switcher';
+@import 'loader';
+@import 'table';
+@import 'popover';
+@import 'comments';
+@import 'offcanvas';
+@import 'counterup';
+@import 'offrastep';
+@import 'navs';
+@import 'btn';
+@import 'components';
+@import 'forms';
+@import 'color';
+@import 'images';
+@import 'reset';
+@import 'grid';
+/*Float class*/
+
+
+
+@media only screen and (min-width:1350px) and (max-width:4000px){
+    
+    
+}
+@media only screen and (min-width:1150px) and (max-width:1349px){
+    
+}
+@media only screen and (min-width:992px) and (max-width:1149px){
+    
+    .navbar-nav li a {
+        padding: 0px 20px 0px 0px;
+        font-size: .85em;
+        margin-right: 2px;
+    }
+    .DropDown,.NsubMenu, .subMenu {
+        width: 190px;
+    }
+    .demo-countdown span{
+        font-size: 28px;
+    }
+    
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+    
+    .navbar-nav li a {
+        padding: 0px 25px 0px 0px;
+        font-size: .85em;
+        margin-right: 2px;
+    }
+    .demo-countdown span{
+        font-size: 20px;
+    }
+    .DropDown,.NsubMenu, .subMenu {
+        width: 190px;
+    }
+    .timeline-item.timeline-right .timeline-time {
+        right: calc(100% + 30px);
+    }
+    .timeline-item.timeline-left .timeline-time {
+        left: calc(100% + 30px);
+    }
+    
+}
+@media only screen and (min-width:320px) and (max-width:767px){
+    
+    .menu_toggle{
+            display: flex;
+            cursor: pointer;
+            min-height: 60px;
+            align-items: center;
+            justify-content: center;
+    }
+    .navigation-area{
+        position: relative;
+    }
+    .demo-countdown span{
+        font-size: 18px;
+    }
+    .navbar-mobile {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        display: block;
+        position: absolute;
+        background: #fff;
+        left: 50%;
+        width: 100%;
+        z-index: 90;
+        padding: 15px;
+        top:100%;
+        transform: rotateX(90deg) translateX(-50%);
+        transform-origin: top;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .30s linear;
+    }
+    .navbar-mobile.active{
+        visibility: visible;
+        transform: rotateX(0deg) translateX(-50%);
+        opacity: 1;
+    }
+    .full-with-dropdown .navbar-nav > li > a {
+        color: #131313 !important;
+    }
+    .navbar-nav li a {
+        line-height: 46px;
+        display: block;
+    }
+    .navbar-nav {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-flow: column;
+        padding-left: 10px;
+        margin-left: 0px;
+    }
+    .DropDown, .subMenu, .NsubMenu{
+        position: relative;
+        left: 0;
+        width: 100%;
+        top: 0;
+    }
+    .DropDown,.subMenu, .NsubMenu{
+        box-shadow: none;
+    }
+    .navbar-nav{
+   li{
+        .DpSign > a{
+            &::after{
+                left: calc(100% - -5px);
+                border-top: 5px solid #333;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+            }
+        }
+    }
+}
+    .navigation-default .brand-logo {
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .full-with-dropdown ul li ul li
+      {
+        float: none;
+    }
+    
+    .demo-single-service p {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .timeline .timeline-item:nth-child(even) {
+        align-self: flex-end !important;
+        text-align: left !important;
+    }
+    .timeline-item {
+        width: calc(100% - 30px);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: left;
+        align-self: flex-end !important;
+    }
+    .timeline-item.timeline-left .timeline-content {
+        text-align: left;
+    }
+    .timeline-item.timeline-left .timeline-element {
+        right: calc(100% + 18px);
+        left: inherit;
+    }
+    .timeline-chat .timeline-item.timeline-right .media {
+    flex-flow: row;
+}
+    .timeline-chat .timeline-item.timeline-right .media .media-content {
+    text-align: left;
+}
+    .timeline-chat .timeline-item.timeline-right .media .media-image {
+    margin-right: 20px;
+    margin-left: 0px;
+}
+    .timeline::before {
+        left: 0;
+    }
+    .dynamic-process {
+        display: block;
+    }
+    .dynamic-process .step-box{
+        width: 100%;
+    }
+    .timeline .timeline-item:nth-child(even) .timeline-element{
+        left: inherit;
+    right: calc(100% + 18px);
+    }
+    .timeline-item.timeline-left .timeline-time, .timeline-item.timeline-right .timeline-time {
+        position: relative;
+        right: 0%;
+        top: 50%;
+        transform: translateY(0%);
+        left: 0;
+        width: initial;
+        display: inline-block;
+    }
+    .timeline-time{
+        padding-top: 10px;
+    }
+    .timeline-chat .timeline-item.timeline-left .timeline-time, .timeline-chat .timeline-item.timeline-right .timeline-time {
+        left: inherit;
+        width: initial;
+        right: inherit;
+        position: static;
+    }
+    .comment-child{
+        padding-left: 20px;
+    }
+    .comment-child > .comment-child > .comment-child{
+        padding-left: 0;
+    }
+    .alert {
+        padding: 15px 32px 15px 15px;
+    }
+    .comment-author {
+        margin-right: 10px;
+    }
+    .input-group .field-control {
+        flex: 1 1 auto;
+        -webkit-box-flex: 1;
+        width: inherit;
+    }
+}
+@media only screen and (min-width:568px) and (max-width:767px){
+    .navbar-mobile{
+        max-width: 440px;
+        
+    }
+    .timeline-item.timeline-right .timeline-time {
+        right: calc(100% + 50px);
+    }
+    .timeline-item.timeline-left .timeline-time {
+        left: calc(100% + 50px);
+    }
+    .alert {
+        padding: 15px 15px 15px 15px;
+    }
+}
+

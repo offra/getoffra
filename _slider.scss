@@ -1,0 +1,105 @@
+  .w3-center{
+    color: green;
+  }
+.slider-prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 40px;
+    line-height: 46px;
+    text-align: center;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+    .slider-next {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        height: 50px;
+        width: 50px;
+        background: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+        font-size: 40px;
+        line-height: 46px;
+        text-align: center;
+        transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+    }
+  .mySlides{
+    visibility: hidden;
+    position: absolute;
+      top: 0;
+  }
+  .offra-slider {
+    height: 800px;
+      display: block;
+      position: relative;
+  }
+  .parent img {
+  border-style: none;
+  height: 100%;
+  max-width: 100%;
+}
+
+.hover-shadow{
+  opacity: .6;
+}
+    .mySlides img{
+        height: 100%;
+            width: 100%;
+    }
+    .mySlides{
+        height: 100%;
+        width: 100%;
+    }
+    .mySlides.pic_active{
+        position: relative;
+    }
+    .slider-caption{
+        position: absolute;
+        left: 50%;
+        bottom: 50px;
+        transform: translateX(-50%);
+        z-index: 10;
+        text-align: center;
+    }
+    .slider-caption > *{
+        color: #fff;
+    }
+.active_slide{
+  opacity: 1;
+}
+    
+  .offra-dots {
+    display: block;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    z-index: 99;
+    bottom: 19px;
+}
+
+.offra-dots li {
+    display: inline-block;
+    color: #fff;
+    height: 10px;
+    width: 10px;
+    border: 1px solid #fff;
+    margin-right: 8px;
+    transition: all .40s linear;
+    cursor: pointer;
+}
+    .offra-dot.active_slide {
+    background: #fff;
+}

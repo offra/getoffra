@@ -1,0 +1,21 @@
+@import 'variable';
+
+.offcanvas-inner{
+    a{
+        display: block;
+        color: $font-color;
+        padding: 10px 0px 10px 0px;
+    }
+}
+.offcanvas-inverse{
+    .offcanvas-cancel{
+        color: $disabled-color !important;
+    }
+    background: $heading-color !important;
+    *{
+        color: $sutitle_color;
+    }
+    a{
+         color: $sutitle_color;
+    }
+}

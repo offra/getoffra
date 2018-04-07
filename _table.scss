@@ -1,0 +1,186 @@
+@import 'variable';
+.offra-table{
+    width: 100%;
+    th{
+        padding: 16px 12px;
+        text-align: left;
+        vertical-align: bottom;
+        font-size: 14px;
+        color: #333;
+        border-top: 1px solid #ddd;
+        @include transition(.30s);
+        vertical-align: middle;
+    }
+    td{
+        padding: 16px 12px;
+        text-align: left;
+        vertical-align: bottom;
+        border-top: 1px solid #ddd;
+        @include transition(.30s);
+        vertical-align: middle;
+    }
+    
+    &.table-bordered{
+        border: 1px solid #ddd;
+        th{
+            margin-top: -1px;
+        }
+        td{
+            margin-top: -1px;
+        }
+    }
+    &.table-bordered-box{
+        
+        th{
+            border: 1px solid #ddd;
+            margin-top: -1px;
+            
+        }
+        td{
+            border: 1px solid #ddd;
+            margin-top: -1px;
+        }
+    }
+    &.table-stripped{
+        tbody{
+            tr:nth-child(odd){
+                background: #f2f2f2;
+            }
+        }
+    }
+    &.table-hover{
+        tr{
+            @include transition(.30s);
+            &:hover{
+                background: #ddd;
+            }
+        }
+        tbody{
+            tr{
+                @include transition(.30s);
+            }
+        }
+        tr:hover{
+            
+        }
+        tbody{
+            tr:nth-child(odd):hover{
+                background: #ddd;
+            }
+        }
+    }
+    &.table-cell-1{
+        td{
+            width: auto !important;
+            max-width: none !important;
+            min-width: 0 !important;
+            overflow: visible !important;
+            white-space: normal !important;
+            display: block;
+        }
+        th{
+            width: auto !important;
+            max-width: none !important;
+            min-width: 0 !important;
+            overflow: visible !important;
+            white-space: normal !important;
+            display: block;
+        }
+    }
+    &.table-cell-2{
+        td{
+            width: 50% !important;
+            max-width: 50% !important;
+            min-width: 0 !important;
+            overflow: visible !important;
+            white-space: normal !important;
+            float: left;
+            &:nth-child(odd){
+                margin-right: -1px;
+            }
+        }
+        th{
+            width: 50% !important;
+            max-width: 50% !important;
+            min-width: 0 !important;
+            overflow: visible !important;
+            white-space: normal !important;
+            float: left;
+            &:nth-child(odd){
+                margin-right: -1px;
+            }
+        }
+        
+    }
+    &.table-cell-3{
+        td{
+            width: 33.33% !important;
+            max-width: 33.33% !important;
+            min-width: 0 !important;
+            overflow: visible !important;
+            white-space: normal !important;
+            float: left;
+            &:nth-child(odd){
+                margin-right: -1px;
+            }
+        }
+        th{
+            width: 33.33% !important;
+            max-width: 33.33% !important;
+            min-width: 0 !important;
+            overflow: visible !important;
+            white-space: normal !important;
+            float: left;
+            &:nth-child(odd){
+                margin-right: -1px;
+            }
+        }
+        
+    }
+    &.table-cell-4{
+        td{
+            width: 25% !important;
+            max-width: 25% !important;
+            min-width: 0 !important;
+            overflow: visible !important;
+            white-space: normal !important;
+            float: left;
+            margin-right: -1px;
+        }
+        th{
+            width: 25% !important;
+            max-width: 25% !important;
+            min-width: 0 !important;
+            overflow: visible !important;
+            white-space: normal !important;
+            float: left;
+            margin-right: -1px;
+        }
+        
+    }
+    &.border-less{
+        border: none !important;
+        th{
+            border: none;
+        }
+        td{
+             border: none;
+        }
+    }
+    
+}
+.table-scroll{
+    overflow: auto;
+}
+.table-primary{
+    background: #D8EAFC; 
+}
+.table-success{
+    background: #DEFCD5;
+}
+.table-warning{
+    background: rgba(254,234,59,.10);
+}
+.table-danger{
+    background: rgba(254,111,108,.10);
+}
